@@ -175,7 +175,7 @@ class BaseSound:
 		return self._sound[index]
 
 
-base_sound = os.path.join(os.path.realpath(os.path.dirname(__file__)), 'base_sounds', 'default.bin')
+base_sound = BaseSound(os.path.join(os.path.realpath(os.path.dirname(__file__)), 'base_sounds', 'default.bin'))
 sound = parse_music(sys.argv[1])
 # print([str(x) for x in sound])
 for segment in sound:
